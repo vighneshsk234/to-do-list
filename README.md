@@ -154,16 +154,13 @@ No installation or additional software is required.
 
 ### 💻 Desktop View
 
-![To-Do List App - Desktop](screenshots/desktop.png)
+![To-Do List App](screenshots/desktop.png)
 
 ### 📱 Mobile View
 
-![To-Do List App - Mobile](screenshots/mobile.png)
+![To-Do List App](screenshots/mobile.png)
 ```
 
-Example:
-
-![To-Do List App](screenshots/desktop.png)
 
 ---
 
