@@ -153,13 +153,12 @@ No installation or additional software is required.
 ## 📸 Application Preview
 
 ### 💻 Desktop View
-
-![To-Do List App](screenshots/desktop.png)
-
-### 📱 Mobile View
-
-![To-Do List App](screenshots/mobile.png)
 ```
+![To-Do List App](screenshots/desktop.png)
+````
+### 📱 Mobile View
+````
+![To-Do List App](screenshots/mobile.png)
 
 
 ---
