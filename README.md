@@ -155,9 +155,10 @@ No installation or additional software is required.
 ### 💻 Desktop View
 ```
 ![To-Do List App](screenshots/desktop.png)
-````
+```markdown
 ### 📱 Mobile View
-````
+
+```
 ![To-Do List App](screenshots/mobile.png)
 
 
