@@ -149,14 +149,16 @@ No installation or additional software is required.
 
 ---
 
+```markdown
 ## 📸 Application Preview
 
-Add screenshots of your project here after uploading them to the repository.
+### 💻 Desktop View
 
-```text
-screenshots/
-├── desktop.png
-└── mobile.png
+![To-Do List App - Desktop](screenshots/desktop.png)
+
+### 📱 Mobile View
+
+![To-Do List App - Mobile](screenshots/mobile.png)
 ```
 
 Example:
