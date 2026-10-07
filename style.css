@@ -1,21 +1,39 @@
+/* =========================
+   RESET
+========================= */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+
+/* =========================
+   BODY
+========================= */
+
 body {
     font-family: Arial, sans-serif;
+
     background-color: #f4f6f8;
+
     min-height: 100vh;
 
     display: flex;
     justify-content: center;
     align-items: center;
+
+    padding: 20px;
 }
 
+
+/* =========================
+   MAIN CONTAINER
+========================= */
+
 .todo-container {
-    width: 90%;
+    width: 100%;
     max-width: 600px;
 
     background-color: white;
@@ -27,21 +45,39 @@ body {
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
 }
 
+
+/* =========================
+   HEADING
+========================= */
+
 h1 {
     text-align: center;
+
     margin-bottom: 10px;
+
+    color: #1e293b;
 }
+
 
 .subtitle {
     text-align: center;
+
     color: #666;
+
     margin-bottom: 25px;
 }
 
+
+/* =========================
+   TASK INPUT
+========================= */
+
 .task-input {
     display: flex;
+
     gap: 10px;
 }
+
 
 .task-input input {
     flex: 1;
@@ -49,25 +85,352 @@ h1 {
     padding: 12px;
 
     border: 1px solid #ccc;
+
     border-radius: 6px;
 
     font-size: 16px;
+
+    outline: none;
 }
+
+
+.task-input input:focus {
+    border-color: #2563eb;
+}
+
 
 .task-input button {
     padding: 12px 20px;
 
     border: none;
+
     border-radius: 6px;
 
     background-color: #2563eb;
+
     color: white;
 
     cursor: pointer;
 
     font-size: 15px;
+
+    transition: 0.2s;
 }
+
 
 .task-input button:hover {
     background-color: #1d4ed8;
+}
+
+
+/* =========================
+   TASK STATISTICS
+========================= */
+
+.task-stats {
+    display: flex;
+
+    justify-content: space-between;
+
+    margin-top: 25px;
+
+    padding: 15px;
+
+    background-color: #f8fafc;
+
+    border-radius: 8px;
+
+    color: #475569;
+
+    font-size: 14px;
+}
+
+
+.task-stats strong {
+    color: #1e293b;
+}
+
+
+/* =========================
+   FILTERS
+========================= */
+
+.filters {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    margin-top: 20px;
+
+    margin-bottom: 20px;
+}
+
+
+.filter-btn {
+    padding: 8px 15px;
+
+    border: 1px solid #cbd5e1;
+
+    background-color: white;
+
+    color: #475569;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+.filter-btn:hover {
+    background-color: #f1f5f9;
+}
+
+
+.filter-btn.active {
+    background-color: #2563eb;
+
+    color: white;
+
+    border-color: #2563eb;
+}
+
+
+/* =========================
+   TASK LIST
+========================= */
+
+#taskList {
+    list-style: none;
+
+    margin-top: 10px;
+}
+
+
+/* =========================
+   TASK ITEM
+========================= */
+
+.task-item {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 15px;
+
+    background-color: #f8fafc;
+
+    padding: 15px;
+
+    margin-bottom: 10px;
+
+    border-radius: 8px;
+
+    border: 1px solid #e2e8f0;
+
+    transition: 0.2s;
+}
+
+
+.task-item:hover {
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================
+   TASK TITLE
+========================= */
+
+.task-title {
+    flex: 1;
+
+    font-size: 16px;
+
+    color: #1e293b;
+
+    word-break: break-word;
+}
+
+
+/* =========================
+   COMPLETED TASK
+========================= */
+
+.task-item.completed {
+    opacity: 0.7;
+}
+
+
+.task-item.completed .task-title {
+    text-decoration: line-through;
+
+    color: #888;
+}
+
+
+/* =========================
+   TASK BUTTONS
+========================= */
+
+.task-buttons {
+    display: flex;
+
+    gap: 8px;
+}
+
+
+.task-buttons button {
+    border: none;
+
+    padding: 8px 12px;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    color: white;
+
+    transition: 0.2s;
+}
+
+
+/* Complete Button */
+
+.complete-btn {
+    background-color: #16a34a;
+}
+
+
+.complete-btn:hover {
+    background-color: #15803d;
+}
+
+
+/* Delete Button */
+
+.delete-btn {
+    background-color: #dc2626;
+}
+
+
+.delete-btn:hover {
+    background-color: #b91c1c;
+}
+
+
+/* =========================
+   CLEAR COMPLETED
+========================= */
+
+.clear-btn {
+    width: 100%;
+
+    margin-top: 15px;
+
+    padding: 12px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background-color: #64748b;
+
+    color: white;
+
+    cursor: pointer;
+
+    font-size: 15px;
+
+    transition: 0.2s;
+}
+
+
+.clear-btn:hover {
+    background-color: #475569;
+}
+
+
+/* =========================
+   EMPTY STATE
+========================= */
+
+.empty-message {
+    text-align: center;
+
+    padding: 25px;
+
+    color: #94a3b8;
+
+    font-size: 15px;
+}
+
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 10px;
+    }
+
+
+    .todo-container {
+        width: 100%;
+
+        padding: 20px;
+    }
+
+
+    .task-input {
+        flex-direction: column;
+    }
+
+
+    .task-input button {
+        width: 100%;
+    }
+
+
+    .task-stats {
+        flex-direction: column;
+
+        gap: 8px;
+
+        text-align: center;
+    }
+
+
+    .filters {
+        flex-wrap: wrap;
+    }
+
+
+    .filter-btn {
+        flex: 1;
+    }
+
+
+    .task-item {
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+
+    .task-buttons {
+        width: 100%;
+    }
+
+
+    .task-buttons button {
+        flex: 1;
+    }
+
 }

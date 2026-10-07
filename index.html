@@ -13,26 +13,84 @@
 <body>
 
     <div class="todo-container">
-        
+
+        <!-- Heading -->
         <h1>My To-Do List</h1>
 
         <p class="subtitle">
             Organize your tasks and stay productive
         </p>
-        
+
+
+        <!-- Task Input -->
         <div class="task-input">
 
-            <input type="text" id="taskInput" placeholder="Enter a task...">
+            <input
+                type="text"
+                id="taskInput"
+                placeholder="Enter a task..."
+            >
 
             <button id="addTaskBtn">
                 Add Task
             </button>
 
         </div>
-        
+
+
+        <!-- Task Statistics -->
+        <div class="task-stats">
+
+            <span>
+                Total:
+                <strong id="totalTasks">0</strong>
+            </span>
+
+            <span>
+                Active:
+                <strong id="activeTasks">0</strong>
+            </span>
+
+            <span>
+                Completed:
+                <strong id="completedTasks">0</strong>
+            </span>
+
+        </div>
+
+
+        <!-- Filters -->
+        <div class="filters">
+
+            <button class="filter-btn active" data-filter="all">
+                All
+            </button>
+
+            <button class="filter-btn" data-filter="active">
+                Active
+            </button>
+
+            <button class="filter-btn" data-filter="completed">
+                Completed
+            </button>
+
+        </div>
+
+
+        <!-- Task List -->
+        <ul id="taskList"></ul>
+
+
+        <!-- Clear Completed -->
+        <button id="clearCompletedBtn" class="clear-btn">
+            Clear Completed
+        </button>
+
     </div>
 
+
     <script src="script.js"></script>
+
 </body>
 
 </html>
